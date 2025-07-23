@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Tic-Tac-Toe</h1>
+
+        <div id="game-play-page" class="page active">
+            <h2 id="round-info">Round 1 of 3</h2>
+            <div id="game-info"></div>
+            <div id="game-board">
+                <div class="cell" data-cell-index="0"></div>
+                <div class="cell" data-cell-index="1"></div>
+                <div class="cell" data-cell-index="2"></div>
+                <div class="cell" data-cell-index="3"></div>
+                <div class="cell" data-cell-index="4"></div>
+                <div class="cell" data-cell-index="5"></div>
+                <div class="cell" data-cell-index="6"></div>
+                <div class="cell" data-cell-index="7"></div>
+                <div class="cell" data-cell-index="8"></div>
+            </div>
+            <div id="game-messages"></div>
+            <button id="next-round-btn" style="display: none;">Next Round</button>
+        </div>
+
+        <div id="score-page" class="page">
+            <h2>Game Over! Final Scores</h2>
+            <div id="final-winner-message"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th id="playerXScoreHeader">Player X</th>
+                        <th id="playerOScoreHeader">Player O</th>
+                        <th>Winner</th>
+                    </tr>
+                </thead>
+                <tbody id="score-table-body">
+                </tbody>
+            </table>
+            <button id="restart-game-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
